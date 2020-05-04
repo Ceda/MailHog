@@ -1,3 +1,5 @@
 build:
   docker:
     web: Dockerfile
+run:
+  web: mailhog -api-bind-addr=0.0.0.0:$PORT -ui-bind-addr=0.0.0.0:$PORT
